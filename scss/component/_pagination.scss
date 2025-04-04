@@ -1,0 +1,33 @@
+@use "../global" as g;
+
+/*!
+component > pagination
+------------------------------
+*/
+
+.c-pagination-items {
+  display: flex;
+  gap: 8px;
+  margin-top: 40px;
+  justify-content: center;
+}
+.c-pagination-item {
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  line-height: 35px;
+  width: 35px;
+  height: 35px;
+  background-color: var(--bg-gray);
+  color: var(--font-base);
+  font-size: 14px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &--active {
+    background-color: var(--bg-black);
+    color: var(--font-white);
+  }
+}

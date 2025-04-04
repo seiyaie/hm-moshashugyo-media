@@ -1,0 +1,36 @@
+@use "../global" as g;
+
+
+/*!
+component > label
+------------------------------
+*/
+
+.c-label {
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--font-white);
+  border-radius: 100px;
+  line-height: 100%;
+
+  &--html-css {
+    background-color: var(--bg-gold);
+  }
+
+  &--javascript {
+    background-color: var(--bg-green);
+  }
+
+  &--wordpress {
+    background-color: var(--bg-blue);
+  }
+
+  &--web-design {
+    background-color: var(--bg-orange);
+  }
+
+  &--web-creation {
+    background-color: var(--bg-pink);
+  }
+}

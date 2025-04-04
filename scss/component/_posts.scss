@@ -1,0 +1,64 @@
+@use "../global" as g;
+
+/*!
+component > posts
+------------------------------
+*/
+
+.c-posts {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px 24px;
+
+  &--col2 {
+    @include g.mq() {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &--col3 {
+    @include g.mq() {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include g.mq(lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+}
+
+.c-post-thumbnail {
+  margin-top: 8px;
+  display: block;
+
+  img {
+    aspect-ratio: 324/170;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.c-post-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 160%;
+  margin-top: 8px;
+
+  &:hover {
+    opacity: .5;
+  }
+
+  @include g.mq() {
+    font-size: 20px;
+  }
+}
+
+.c-post-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

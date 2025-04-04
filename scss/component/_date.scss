@@ -1,0 +1,12 @@
+@use "../global" as g;
+
+/*!
+component > date
+------------------------------
+*/
+
+.c-date {
+  font-size: 12px;
+  color: var(--font-gray);
+  line-height: 100%;
+}

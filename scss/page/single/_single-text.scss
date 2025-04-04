@@ -1,0 +1,86 @@
+@use "../../global" as g;
+
+/*!
+layout > single > single-texts
+------------------------------
+*/
+
+.single-article-contents {
+  & p:first-of-type {
+    margin-top: 40px !important;
+  }
+}
+
+.single-article-text {
+  margin-top: 24px;
+}
+
+.single-article-title {
+  background: var(--bg-black);
+  color: var(--font-white);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 160%;
+  border-radius: 8px;
+  padding: 10px 8px;
+  margin-top: 64px;
+
+  @include g.mq() {
+    font-size: 20px;
+    margin-top: 80px;
+  }
+}
+
+.single-article-sub-title {
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: bold;
+  border-bottom: 1px solid var(--border-primary);
+  padding-bottom: 6px;
+  padding-left: 36px;
+  margin-top: 24px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 22.5px;
+    background-image: url(../img/icon-mosha.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 3px;
+    left: 0;
+
+
+    @include g.mq() {
+      top: 5px;
+    }
+  }
+  
+  @include g.mq() {
+    font-size: 20px;
+  }
+
+
+//   &::before {
+//     content: "";
+//     display: block;
+//     width: 28px;
+//     height: 28px;
+//     position: absolute;
+//     top: 15px;
+//     left: 0;
+//     // transform: translateY(-50%);
+//     background-position: center;
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-image: url(../img/icon-mosha.png);
+
+//     @include g.mq() {
+//         top: 18px;
+//     }
+// }
+}

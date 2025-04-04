@@ -1,0 +1,37 @@
+@use "../../global" as g;
+
+/*!
+layout > single > single-rec
+------------------------------
+*/
+
+.single-rec {
+  padding: 56px 0;
+
+  @include g.mq() {
+    padding: 64px 0;
+  }
+}
+
+.single-rec-posts {
+  margin-top: 40px;
+}
+
+.single-rec-title {
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: bold;
+  text-align: center;
+
+  &::before {
+    content: "";
+    background-image: url(../img/icon-mosha.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: block;
+    width: 34px;
+    height: 27px;
+  }
+}

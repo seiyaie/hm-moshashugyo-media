@@ -1,0 +1,24 @@
+@use "../../global" as g;
+
+/*!
+layout > single > single
+------------------------------
+*/
+
+.single {
+  padding-top: 54px;
+  
+  @include g.mq() {
+    padding-top: 64px;
+  }
+
+  @include g.mq(lg) {
+    padding-top: 82px;
+  }
+
+}
+
+.single-banner {
+  margin-top: 24px;
+  display: block;
+}

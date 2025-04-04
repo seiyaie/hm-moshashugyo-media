@@ -1,0 +1,48 @@
+/*!
+global > color
+------------------------------
+*/
+:root {
+  --bg-primary: #c5ab5f;
+  --bg-primary-light: rgba(197, 171, 95, 10%);
+  --bg-black: #000000;
+  --bg-white: #ffffff;
+  --bg-gray: #d1d1d1;
+  --bg-gold: #aca56c;
+  --bg-orange: #D0A85E;
+  --bg-blue: #6C9DAC;
+  --bg-pink: #AC6CA0;
+  --bg-green: #6CAC7B;
+  --border-gray: #DDDDDD;
+  --border-primary: #C5AB5F;
+  --border-white: #FFFFFF;
+  --font-base: #000000;
+  --font-white: #FFFFFF;
+  --font-gray: #666666;
+}
+
+/*!
+global > content-width
+------------------------------
+*/
+:root {
+  --width-content-s: 760px;
+  --width-content: 1080px;
+}
+
+/*!
+global > font
+------------------------------
+*/
+:root {
+  --font-family-base: "Noto Serif JP", serif;
+}
+
+/*!
+component > date
+------------------------------
+*/
+.c-date {
+  font-size: 12px;
+  color: var(--font-gray);
+}/*# sourceMappingURL=＿date.css.map */

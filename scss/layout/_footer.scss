@@ -1,0 +1,67 @@
+@use "../global" as g;
+
+/*!
+layout > footer
+------------------------------
+*/
+
+.footer {
+  background-color: var(--bg-primary-light);
+  padding: 40px 0 16px;
+
+  &-logo {
+    max-width: 320px;
+  }
+
+  &-text {
+    font-size: 12px;
+    margin-top: 16px;
+
+    & span {
+      display: block;
+    }
+  }
+  
+  &-copyright {
+    font-size: 12px;
+    border-top: 1px solid var(--border-gray);
+    display: block;
+    text-align: center;
+    padding-top: 16px;
+    margin-top: 32px;
+  }
+}
+.footer-inner {
+  @include g.mq() {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.footer-desc {
+  margin-right: auto;
+}
+
+
+
+.footer-sns {
+  margin-top: 16px;
+}
+
+.footer-nav {
+  margin-top: 32px;
+  
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  &-item {
+    font-size: 12px;
+    
+    &:not(:first-child)::before {
+      content: " / ";
+      padding: 0 3px;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@use "../global" as g;
+
+
+/*!
+page > contact
+------------------------------
+*/
+
+.contact {
+  padding: 56px 0;
+
+  @include g.mq() {
+    padding: 64px 0;
+  }
+}
+
+.contact-title {
+  font-size: 20px;
+  font-weight: bold;
+
+  @include g.mq() {
+    font-size: 26px;
+  }
+}
+
+
+
+.contact-form {
+  margin-top: 32px;
+}
+
+
+
+.contact-item {
+  margin-top: 24px;
+  @include g.mq() {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+}
+
+.contact-label {
+  font-size: 14px;
+  font-weight: bold;
+
+  @include g.mq() {
+    font-size: 16px;
+  }
+}
+
+.contact-input {
+  border: 1px solid var(--border-gray);
+  width: 100%;
+  margin-top: 4px;
+
+  @include g.mq() {
+    margin-top: 0;
+  }
+}
+
+.contact-textarea {
+  border: 1px solid var(--border-gray);
+  width: 100%;
+  height: 324px;
+  margin-top: 4px;
+
+  @include g.mq() {
+    margin-top: 0;
+  }
+}
+
+.contact-button {
+  display: block;
+  margin: 24px auto 0;
+}

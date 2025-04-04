@@ -1,0 +1,24 @@
+@use "../global" as g;
+
+
+/*!
+page > about
+------------------------------
+*/
+
+.about {
+  padding: 56px 0;
+
+  @include g.mq() {
+    padding: 64px 0;
+  }
+}
+
+.about-text {
+  margin-top: 24px;
+  font-size: 14px;
+
+  @include g.mq() {
+    font-size: 16px;
+  }
+}

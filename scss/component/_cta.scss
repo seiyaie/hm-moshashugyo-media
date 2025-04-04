@@ -1,0 +1,71 @@
+@use "../global" as g;
+
+/*!
+component > cta
+------------------------------
+*/
+
+.c-cta {
+  background-image: url(../img/c-cta.png);
+  background-size: cover;
+  background-position: center;
+  padding: 56px 0;
+}
+
+.c-cta-inner {
+  @include g.mq() {
+    display: grid;
+    grid-template-columns: 1fr 42%;
+    align-items: center;
+    gap: 40px;
+  }
+
+}
+
+.c-cta-screenshot {
+  max-width: 350px;
+  margin: 0 auto;
+
+  @include g.mq() {
+    order: 1;
+  }
+}
+
+.c-cta-info {
+  margin-top: 24px;
+
+  @include g.mq() {
+    margin-top: 0;
+  }
+}
+
+.c-cta-logo {
+  max-width: 415px;
+  margin: 0 auto;
+
+
+}
+
+.c-cta-text {
+  color: var(--font-white);
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 12px;
+  text-align: center;
+
+  @include g.mq() {
+    font-size: 14px;
+    margin-top: 16px;
+    text-align: left;
+  }
+}
+
+.c-cta-button {
+  text-align: center;
+  margin-top: 24px;
+
+  @include g.mq() {
+    text-align: left;
+  }
+}
+
