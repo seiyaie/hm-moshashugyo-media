@@ -6,16 +6,16 @@ layout > container
 */
 
 %container {
-  width: 90%;
-  margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .l-container-s {
-  @extend %container;
-  max-width: var(--width-content-s);
+    @extend %container;
+    max-width: var(--width-content-s);
 }
 
 .l-container {
-  @extend %container;
-  max-width: var(--width-content);
+    @extend %container;
+    max-width: var(--width-content);
 }

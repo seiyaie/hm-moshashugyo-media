@@ -6,26 +6,26 @@ component > button
 */
 
 .c-button {
-  display: inline-block;
-  font-weight: bold;
-  border-radius: 100px;
-  width: 180px;
-  height: 45px;
-  line-height: 45px;
-  font-size: 14px;
-  text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 100px;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    text-align: center;
 
-  @include g.mq(md) {
-    font-size: 16px;
-  }
+    @include g.mq(md) {
+        font-size: 16px;
+    }
 
-  &--black {
-    background-color: var(--bg-black);
-    color: var(--font-white);
-  }
+    &--black {
+        background-color: var(--bg-black);
+        color: var(--font-white);
+    }
 
-  &--white {
-    background-color: var(--bg-white);
-    color: var(--font-base);
-  }
+    &--white {
+        background-color: var(--bg-white);
+        color: var(--font-base);
+    }
 }

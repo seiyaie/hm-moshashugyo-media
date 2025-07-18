@@ -6,52 +6,52 @@ layout > header
 */
 
 .header-inner {
-  height: 65px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  @include g.mq() {
-    height: 75px;
-  }
+    @include g.mq() {
+        height: 75px;
+    }
 }
 
 .header-logo {
-  width: 180px;
+    width: 180px;
 
-  @include g.mq(sm) {
-    width: 320px;
-  }
+    @include g.mq(sm) {
+        width: 320px;
+    }
 }
 
 .header-nav {
-  background-color: var(--bg-primary);
-  color: var(--font-white);
-  font-weight: bold;
-  height: 40px;
-  display: flex;
-  align-items: center;
-
-  &-list {
+    background-color: var(--bg-primary);
+    color: var(--font-white);
+    font-weight: bold;
+    height: 40px;
     display: flex;
-    overflow-x: hidden;
-  }
+    align-items: center;
 
-  &-item {
-    white-space: nowrap;
-    font-size: 12px;
-
-    @include g.mq() {
-      font-size: 14px;
+    &-list {
+        display: flex;
+        overflow-x: hidden;
     }
 
-    &:not(:first-child) {
-      border-left: 1px solid var(--border-white);
-      padding-left: 16px;
-    }
+    &-item {
+        white-space: nowrap;
+        font-size: 12px;
 
-    &:not(:last-child) {
-      padding-right: 16px;
+        @include g.mq() {
+            font-size: 14px;
+        }
+
+        &:not(:first-child) {
+            border-left: 1px solid var(--border-white);
+            padding-left: 16px;
+        }
+
+        &:not(:last-child) {
+            padding-right: 16px;
+        }
     }
-  }
 }

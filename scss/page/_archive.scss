@@ -1,15 +1,14 @@
 @use "../global" as g;
 
-
 /*!
 page > archive
 ------------------------------
 */
 
 .archive-posts {
-  padding: 54px 0;
+    padding: 54px 0;
 
-  @include g.mq() {
-    padding: 64px 0;
-  }
+    @include g.mq() {
+        padding: 64px 0;
+    }
 }

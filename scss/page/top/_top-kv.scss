@@ -6,114 +6,112 @@ layout > top > top-kv
 */
 
 .top-kv {
-  background-image: url(../../../../img/bg-pattern-kv.png);
-  background-size: 140px;
-  position: relative;
-  padding: 56px 0 8px;
-
-  @include g.mq() {
-    padding: 46px 0;
-  }
-
-  &-inner {
-    @include g.mq() {
-      display: grid;
-      grid-template-columns: 1fr 200px;
-      gap: 40px;
-      align-items: center;
-    }
-  }
-
-  &-recommendation {
-    border-radius: 16px;
-    border: 1px solid var(--border-primary);
-    overflow: hidden;
-    z-index: 1;
-
-    &:hover {
-      opacity: .7;
-    }
-  }
-
-  &-link {
-    display: block;
-    overflow: hidden;
-    @include g.mq() {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
-    }
-  }
-
-
-
-  &-thumbnail {
-    height: 100%;
-    @include g.mq() {
-      order: 1;
-    }
-
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  &-desc {
-    background-color: var(--bg-white);
-    padding: 16px 17px;
+    background-image: url(../../../../img/bg-pattern-kv.png);
+    background-size: 140px;
+    position: relative;
+    padding: 56px 0 8px;
 
     @include g.mq() {
-      padding: 32px;
+        padding: 46px 0;
     }
 
-    @include g.mq(lg) {
-      padding: 58px 48px;
+    &-inner {
+        @include g.mq() {
+            display: grid;
+            grid-template-columns: 1fr 200px;
+            gap: 40px;
+            align-items: center;
+        }
     }
-  }
 
-  &-title {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 160%;
-    margin-top: 8px;
+    &-recommendation {
+        border-radius: 16px;
+        border: 1px solid var(--border-primary);
+        overflow: hidden;
+        z-index: 1;
 
-    @include g.mq() {
-      font-size: 20px;
+        &:hover {
+            opacity: 0.7;
+        }
     }
-  }
 
-  &-date {
-    text-align: right;
-    margin-top: 10px;
-    line-height: 100%;
-
-    @include g.mq() {
-      margin-top: 48px;
+    &-link {
+        display: block;
+        overflow: hidden;
+        @include g.mq() {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
     }
-  }
 
-  &-character {
-    width: 40%;
-    max-width: 200px;
-    margin-left: auto;
+    &-thumbnail {
+        height: 100%;
+        @include g.mq() {
+            order: 1;
+        }
 
-    @include g.mq() {
-      width: 200px;
-      flex: 1;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
-  }
 
-  &-treat {
-    position: absolute;
-    left: 0;
-    bottom: 20px;
-    width: 180px;
+    &-desc {
+        background-color: var(--bg-white);
+        padding: 16px 17px;
 
-    @include g.mq() {
-      width: 250px;
-      bottom: 25px;
+        @include g.mq() {
+            padding: 32px;
+        }
+
+        @include g.mq(lg) {
+            padding: 58px 48px;
+        }
     }
-  }
+
+    &-title {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 160%;
+        margin-top: 8px;
+
+        @include g.mq() {
+            font-size: 20px;
+        }
+    }
+
+    &-date {
+        text-align: right;
+        margin-top: 10px;
+        line-height: 100%;
+
+        @include g.mq() {
+            margin-top: 48px;
+        }
+    }
+
+    &-character {
+        width: 40%;
+        max-width: 200px;
+        margin-left: auto;
+
+        @include g.mq() {
+            width: 200px;
+            flex: 1;
+        }
+    }
+
+    &-treat {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 180px;
+
+        @include g.mq() {
+            width: 250px;
+            bottom: 25px;
+        }
+    }
 }

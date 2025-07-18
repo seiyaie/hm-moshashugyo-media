@@ -1,41 +1,39 @@
 @use "../global" as g;
 
-
 /*!
 page > 404
 ------------------------------
 */
 
-
 .error-page {
-  padding: 56px 0;
+    padding: 56px 0;
 
-  @include g.mq() {
-    padding: 64px 0;
-  }
+    @include g.mq() {
+        padding: 64px 0;
+    }
 }
 
 .error-title {
-  text-align: center;
+    text-align: center;
 }
 
 .error-text {
-  font-weight: bold;
-  font-size: 14px;
-  text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
 
-  @include g.mq() {
-    font-size: 16px;
-  }
-
-  & span {
     @include g.mq() {
-      display: block;
+        font-size: 16px;
     }
-  }
+
+    & span {
+        @include g.mq() {
+            display: block;
+        }
+    }
 }
 
 .error-button {
-  display: block;
-  margin: 24px auto 0;
+    display: block;
+    margin: 24px auto 0;
 }
