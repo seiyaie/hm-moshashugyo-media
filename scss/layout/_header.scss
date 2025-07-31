@@ -40,6 +40,8 @@ layout > header
 
     &-list {
         overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
         display: flex;
         justify-content: center;
         @include g.mq() {

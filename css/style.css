@@ -556,6 +556,8 @@ layout > header
 }
 .header-nav-list {
   overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   display: flex;
   justify-content: center;
 }
