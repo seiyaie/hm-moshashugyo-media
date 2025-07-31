@@ -32,9 +32,19 @@ layout > header
     display: flex;
     align-items: center;
 
+    &-inner {
+        width: 90%;
+        max-width: var(--width-content);
+        margin-inline: auto;
+    }
+
     &-list {
+        overflow-x: scroll;
         display: flex;
-        overflow-x: hidden;
+        justify-content: center;
+        @include g.mq() {
+            justify-content: flex-start;
+        }
     }
 
     &-item {

@@ -1,9 +1,9 @@
 @use "top/top-kv";
 @use "top/top-posts";
-@use "archive";
+@use "archive/archive";
 @use "single/single";
 @use "single/single-text";
 @use "single/single-rec";
-@use "about";
-@use "error";
-@use "contact";
+@use "about/about";
+@use "error/error";
+@use "contact/contact";

@@ -14,104 +14,104 @@ layout > top > top-kv
     @include g.mq() {
         padding: 46px 0;
     }
+}
 
-    &-inner {
-        @include g.mq() {
-            display: grid;
-            grid-template-columns: 1fr 200px;
-            gap: 40px;
-            align-items: center;
-        }
+.top-kv-inner {
+    @include g.mq() {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        gap: 40px;
+        align-items: center;
+    }
+}
+
+.top-kv-recommendation {
+    border-radius: 16px;
+    border: 1px solid var(--border-primary);
+    overflow: hidden;
+    z-index: 1;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.top-kv-link {
+    display: block;
+    overflow: hidden;
+    @include g.mq() {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+.top-kv-thumbnail {
+    height: 100%;
+    @include g.mq() {
+        order: 1;
     }
 
-    &-recommendation {
-        border-radius: 16px;
-        border: 1px solid var(--border-primary);
-        overflow: hidden;
-        z-index: 1;
-
-        &:hover {
-            opacity: 0.7;
-        }
-    }
-
-    &-link {
-        display: block;
-        overflow: hidden;
-        @include g.mq() {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-items: center;
-        }
-    }
-
-    &-thumbnail {
+    img {
+        width: 100%;
         height: 100%;
-        @include g.mq() {
-            order: 1;
-        }
+        object-fit: cover;
+    }
+}
 
-        & img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.top-kv-desc {
+    background-color: var(--bg-white);
+    padding: 16px 17px;
+
+    @include g.mq() {
+        padding: 32px;
     }
 
-    &-desc {
-        background-color: var(--bg-white);
-        padding: 16px 17px;
-
-        @include g.mq() {
-            padding: 32px;
-        }
-
-        @include g.mq(lg) {
-            padding: 58px 48px;
-        }
+    @include g.mq(lg) {
+        padding: 58px 48px;
     }
+}
 
-    &-title {
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 160%;
-        margin-top: 8px;
+.top-kv-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 160%;
+    margin-top: 8px;
 
-        @include g.mq() {
-            font-size: 20px;
-        }
+    @include g.mq() {
+        font-size: 20px;
     }
+}
 
-    &-date {
-        text-align: right;
-        margin-top: 10px;
-        line-height: 100%;
+.top-kv-date {
+    text-align: right;
+    margin-top: 10px;
+    line-height: 100%;
 
-        @include g.mq() {
-            margin-top: 48px;
-        }
+    @include g.mq() {
+        margin-top: 48px;
     }
+}
 
-    &-character {
-        width: 40%;
-        max-width: 200px;
-        margin-left: auto;
+.top-kv-character {
+    width: 40%;
+    max-width: 200px;
+    margin-left: auto;
 
-        @include g.mq() {
-            width: 200px;
-            flex: 1;
-        }
+    @include g.mq() {
+        width: 200px;
+        flex: 1;
     }
+}
 
-    &-treat {
-        position: absolute;
-        left: 0;
-        bottom: 20px;
-        width: 180px;
+.top-kv-treat {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 180px;
 
-        @include g.mq() {
-            width: 250px;
-            bottom: 25px;
-        }
+    @include g.mq() {
+        width: 250px;
+        bottom: 25px;
     }
 }
