@@ -645,7 +645,7 @@ layout > top > top-kv
 ------------------------------
 */
 .top-kv {
-  background-image: url(../../../../img/bg-pattern-kv.png);
+  background-image: url(../img/bg-pattern-kv.png);
   background-size: 140px;
   position: relative;
   padding: 56px 0 8px;
