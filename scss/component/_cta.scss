@@ -6,10 +6,13 @@ component > cta
 */
 
 .c-cta {
-    background-image: url(../img/c-cta.png);
+    background-image: url(../img/c-cta-sp.png);
     background-size: cover;
     background-position: center;
     padding: 56px 0;
+    @include g.mq() {
+        background-image: url(../img/c-cta.png);
+    }
 }
 
 .c-cta-inner {

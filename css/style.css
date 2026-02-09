@@ -438,10 +438,15 @@ component > cta
 ------------------------------
 */
 .c-cta {
-  background-image: url(../img/c-cta.png);
+  background-image: url(../img/c-cta-sp.png);
   background-size: cover;
   background-position: center;
   padding: 56px 0;
+}
+@media screen and (min-width: 768px) {
+  .c-cta {
+    background-image: url(../img/c-cta.png);
+  }
 }
 
 @media screen and (min-width: 768px) {
