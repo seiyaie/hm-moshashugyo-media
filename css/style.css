@@ -351,6 +351,9 @@ component > pagination
   background-color: var(--bg-black);
   color: var(--font-white);
 }
+.c-pagination-item--dots {
+  pointer-events: none;
+}
 
 /*!
 component > posts

@@ -30,4 +30,7 @@ component > pagination
         background-color: var(--bg-black);
         color: var(--font-white);
     }
+    &--dots {
+        pointer-events: none;
+    }
 }
